@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Movie</title>
+  <link rel="stylesheet" href="boost10.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  
+  <link rel="shortcut icon" href="https://i.pinimg.com/736x/01/67/b4/0167b4db9c8cb87bc47f887791f7ee4f.jpg" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-black">
+  <nav class="navbar navbar-expand-lg navbar-dark head bg-dark fixed-top px-lg-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3" href="#">Anime Movie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Anime Movie</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action 2024</a></li>
+                <li><a class="dropdown-item" href="#">Another 2025</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">All Movies</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="w-100 h-auto main-con position-relative mt">
+    <div id="carouselExampleInterval" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active w-100 h-100 bg-danger" data-bs-interval="10000">
+          <img height="750px" src="https://i.pinimg.com/1200x/b7/f7/f8/b7f7f880618687fd956efcf9f734878d.jpg" class="object-fit-cover w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img width="100%" height="750px" src="https://i.pinimg.com/1200x/69/6e/bb/696ebb7a89d2d5a0f354d4d5ac1f1b72.jpg" class="object-fit-cover" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img height="750px" src="https://i.pinimg.com/1200x/06/35/bf/0635bf6e3bbbe6d85b0f167c3ade5614.jpg" class="object-fit-cover w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-info" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-info" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="text-con position-absolute justify-content-center align-items-center text-center d-flex flex-column gap-4">
+      <h1>Welcome To Anime Movie <span id="element" ></span></h1>
+      <p class="text-warning">The Best Anime Movie For Everyone Ever</p>
+      <button class="py-3 px-4 border-0 rounded-2 ">Watch Now</button>
+    </div>
+  </main>
+
+  <section class="container-fluid con-card">
+    <h1 class="text-center text-white pt-4 pb-4">The Best Anime Movie</h1>
+
+    <div class="container h-75 mt-3 row justify-content-center align-content-center gap-4 align-items-center">
+      
+      <div class="col-5 col-md-3 col-lg-2 bg-black item-mv m-0 p-0 rounded-4">
+        <img class="object-fit-cover rounded-4" src="https://i.pinimg.com/736x/c8/02/2d/c8022d14fc3450e704ca2ea18449f1b8.jpg" alt="">
+        <p class="position-absolute text-white rounded-2 px-3">10/10</p>
+        <div class="date-time w-100 h-auto position-absolute d-flex justify-content-between px-2">
+          <p class="bg-warning px-2 rounded-2">1:45h</p>
+          <p class="px-2 rounded-2 text-white">15,08,2025</p>
+        </div>
+        <h6 class="text-light text-center pt-1">One piece</h6>
+      </div>
+
+      <div class="col-5 col-md-3 col-lg-2 bg-black item-mv m-0 p-0 rounded-4">
+        <img class="object-fit-cover rounded-4" src="https://i.pinimg.com/736x/05/20/95/05209578d20ec18d4aba21d2508c2a9e.jpg" alt="">
+        <p class="position-absolute text-white rounded-2 px-3">10/10</p>
+        <div class="date-time w-100 h-auto position-absolute d-flex justify-content-between px-2">
+          <p class="bg-warning px-2 rounded-2">1:45h</p>
+          <p class="px-2 rounded-2 text-white">15,08,2025</p>
+        </div>
+        <h6 class="text-light text-center pt-1">Naruto</h6>
+      </div>
+
+      <div class="col-5 col-md-3 col-lg-2 bg-black item-mv m-0 p-0 rounded-4">
+        <img class="object-fit-cover rounded-4" src="https://i.pinimg.com/1200x/90/35/5b/90355b7da52be10e285bfeeceb43405f.jpg" alt="">
+        <p class="position-absolute text-white rounded-2 px-3">10/10</p>
+        <div class="date-time w-100 h-auto position-absolute d-flex justify-content-between px-2">
+          <p class="bg-warning px-2 rounded-2">1:45h</p>
+          <p class="px-2 rounded-2 text-white">15,08,2025</p>
+        </div>
+        <h6 class="text-light text-center pt-1">Attack on Titan</h6>
+      </div>
+
+      <div class="col-5 col-md-3 col-lg-2 bg-black item-mv m-0 p-0 rounded-4">
+        <img class="object-fit-cover rounded-4" src="https://i.pinimg.com/736x/06/03/f0/0603f0de4ecd89d372a7ea09368625df.jpg" alt="">
+        <p class="position-absolute text-white rounded-2 px-3">10/10</p>
+        <div class="date-time w-100 h-auto position-absolute d-flex justify-content-between px-2">
+          <p class="bg-warning px-2 rounded-2">1:45h</p>
+          <p class="px-2 rounded-2 text-white">15,08,2025</p>
+        </div>
+        <h6 class="text-light text-center pt-1">Fullmetal Alchemist</h6>
+      </div>
+
+      <div class="col-5 col-md-3 col-lg-2 bg-black item-mv m-0 p-0 rounded-4">
+        <img class="object-fit-cover rounded-4" src="https://i.pinimg.com/736x/39/9b/83/399b83aa72375e3e8aad65b57656f646.jpg" alt="">
+        <p class="position-absolute text-white rounded-2 px-3">10/10</p>
+        <div class="date-time w-100 h-auto position-absolute d-flex justify-content-between px-2">
+          <p class="bg-warning px-2 rounded-2">1:45h</p>
+          <p class="px-2 rounded-2 text-white">15,08,2025</p>
+        </div>
+        <h6 class="text-light text-center pt-1">Demon Slayer</h6>
+      </div>
+
+      <div class="col-5 col-md-3 col-lg-2 bg-black item-mv m-0 p-0 rounded-4">
+        <img class="object-fit-cover rounded-4" src="https://i.pinimg.com/736x/64/64/5d/64645d25e6da2946cbb68468af7f3fe1.jpg" alt="">
+        <p class="position-absolute text-white rounded-2 px-3">10/10</p>
+        <div class="date-time w-100 h-auto position-absolute d-flex justify-content-between px-2">
+          <p class="bg-warning px-2 rounded-2">1:45h</p>
+          <p class="px-2 rounded-2 text-white">15,08,2025</p>
+        </div>
+        <h6 class="text-light text-center pt-1">Jujutsu Kaisen</h6>
+      </div>
+
+      <div class="col-5 col-md-3 col-lg-2 bg-black item-mv m-0 p-0 rounded-4">
+        <img class="object-fit-cover rounded-4" src="https://i.pinimg.com/736x/f7/c3/1a/f7c31a2870e425053d488e5cc4f21220.jpg" alt="">
+        <p class="position-absolute text-white rounded-2 px-3">10/10</p>
+        <div class="date-time w-100 h-auto position-absolute d-flex justify-content-between px-2">
+          <p class="bg-warning px-2 rounded-2">1:45h</p>
+          <p class="px-2 rounded-2 text-white">15,08,2025</p>
+        </div>
+        <h6 class="text-light text-center pt-1">Bleach: Thousand-Year Blood War</h6>
+      </div>
+
+      <div class="col-5 col-md-3 col-lg-2 bg-black item-mv m-0 p-0 rounded-4">
+        <img class="object-fit-cover rounded-4" src="https://i.pinimg.com/736x/94/ea/f3/94eaf36ebaef4a16cc0931b1dcdf2f27.jpg" alt="">
+        <p class="position-absolute text-white rounded-2 px-3">10/10</p>
+        <div class="date-time w-100 h-auto position-absolute d-flex justify-content-between px-2">
+          <p class="bg-warning px-2 rounded-2">1:45h</p>
+          <p class="px-2 rounded-2 text-white">15,08,2025</p>
+        </div>
+        <h6 class="text-light text-center pt-1">My Hero Academia</h6>
+      </div>
+
+      <div class="col-5 col-md-3 col-lg-2 bg-black item-mv m-0 p-0 rounded-4">
+        <img class="object-fit-cover rounded-4" src="https://i.pinimg.com/736x/0a/f8/43/0af8436c3807f753b1e4277405207fc8.jpg" alt="">
+        <p class="position-absolute text-white rounded-2 px-3">10/10</p>
+        <div class="date-time w-100 h-auto position-absolute d-flex justify-content-between px-2">
+          <p class="bg-warning px-2 rounded-2">1:45h</p>
+          <p class="px-2 rounded-2 text-white">15,08,2025</p>
+        </div>
+        <h6 class="text-light text-center pt-1">Black Clover</h6>
+      </div>
+
+      <div class="col-5 col-md-3 col-lg-2 bg-black item-mv m-0 p-0 rounded-4">
+        <img class="object-fit-cover rounded-4" src="https://i.pinimg.com/736x/a3/f9/b9/a3f9b9382174ae9a30c8e81e301878a3.jpg" alt="">
+        <p class="position-absolute text-white rounded-2 px-3">10/10</p>
+        <div class="date-time w-100 h-auto position-absolute d-flex justify-content-between px-2">
+          <p class="bg-warning px-2 rounded-2">1:45h</p>
+          <p class="px-2 rounded-2 text-white">15,08,2025</p>
+        </div>
+        <h6 class="text-light text-center pt-1">Dragon Ball Z</h6>
+      </div>
+
+      
+      
+
+
+
+    </div>
+
+  </section>
+
+  <footer class="container row justify-content-center align-items-center pb-3" >
+    <div class="col-9 col-md-9 col-lg-9 cinema d-flex flex-column gap-4">
+      <hr>
+
+      <div class="d-flex justify-content-between lastline">
+        <div class="d-flex gap-2">
+          <i class="bi bi-camera-reels"></i>
+          <p class="pt-2">Legend</p>
+        </div>  
+        <div>
+          <ul class="d-flex justify-content-center align-items-center about">
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Moves</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contacts</a></li>
+            
+          </ul>
+        </div>      
+      </div>
+      
+    </div>
+    <div class="col-2 col-md-2 col-lg-2 d-flex flex-column justify-content-center align-items-center gap-4 m-0 p-0 contactme">
+      <button class=" border-0 rounded-5">Show More</button>
+      <div class="d-flex icon">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter-x"></i>
+        <i class="bi bi-twitch"></i>
+        <i class="bi bi-instagram"></i>
+      </div>
+    </div>
+
+  </footer>
+
+
+  
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['For You'],
+      typeSpeed: 130,
+      backSpeed: 130,
+      loop:true,
+    });
+  </script>
+</html>
